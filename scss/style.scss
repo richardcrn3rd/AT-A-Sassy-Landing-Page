@@ -1,5 +1,7 @@
 
-* {
+@import "config";
+
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,8 +21,10 @@ a {
   text-decoration: none;
 }
 
+
 .hero {
   // This is where the bulk of the SCSS styling needs to be done
+  padding: 50px;
 
   // Take a look at the other files we've built already. How can they be useful here?
 

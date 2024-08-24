@@ -1,5 +1,5 @@
-@import "utilities";
-@import "config";
+@use "utilities";
+@use "config";
 
 
 %btn {
@@ -24,4 +24,4 @@
   @extend %btn;
   @include set-bg($secondary-color);
 }
-}
+
