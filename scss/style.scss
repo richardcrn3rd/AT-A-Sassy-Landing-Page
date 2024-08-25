@@ -1,15 +1,17 @@
 
-@import "config";
+@use "config";
+@use "btnConfig";
 
-*{
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: $light-color;
-  font-family: $font-stack;
+  background-color: config.$light-color;
+  font-family: config.$font-stack;
   line-height: 1;
 }
 
@@ -23,8 +25,26 @@ a {
 
 
 .hero {
-  // This is where the bulk of the SCSS styling needs to be done
-  padding: 50px;
+  margin-right: 50px;
+  .box {
+    background-color: black;
+    color: white;
+
+    .hero-content {
+      & > div {
+        display: inline-block;
+        width: 49%;
+        position: relative;
+        bottom: 150px;
+      }
+
+      img {
+        display: inline-block;
+        width: 49%;
+      }
+    }
+  }
+  }
 
   // Take a look at the other files we've built already. How can they be useful here?
 
@@ -32,7 +52,7 @@ a {
   // 1. $variables
   // 2. nesting (dont forget about the ampersand (&) parent selector!)
   // 3. At-Rules
-}
+
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
 // While you don't have to mess with it, it would be advisable to attempt to understand its functionality.
