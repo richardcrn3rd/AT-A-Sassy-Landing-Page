@@ -53,7 +53,8 @@ a {
   color: white;
 }
 .hero .box li {
-  display: inline-block;
+  display: inline;
+  gap: 5px;
 }
 .hero .box .hero-content > div {
   display: inline-block;

@@ -30,9 +30,11 @@ a {
     background-color: black;
     color: white;
 
-    ul {
+    li {
         display: inline;
+        gap: 5px;
       }  
+
     .hero-content {
       & > div {
         display: inline-block;
