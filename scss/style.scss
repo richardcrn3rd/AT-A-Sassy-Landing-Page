@@ -30,6 +30,9 @@ a {
     background-color: black;
     color: white;
 
+    ul {
+        display: inline;
+      }  
     .hero-content {
       & > div {
         display: inline-block;

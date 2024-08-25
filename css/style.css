@@ -52,6 +52,9 @@ a {
   background-color: black;
   color: white;
 }
+.hero .box li {
+  display: inline-block;
+}
 .hero .box .hero-content > div {
   display: inline-block;
   width: 49%;
